@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+char font[] = "Fira Mono:size=9.5";
+int borderpx = 1;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -54,7 +54,7 @@ static unsigned int blinktimeout = 800;
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+unsigned int cursorthickness = 6;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -63,7 +63,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char termname[] = "xterm-256color";
 
 /*
  * spaces per tab
@@ -86,29 +86,30 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#a00100",
+	"#108000",
+	"#a08000",
+	"#0060a0",
+	"#301080",
+	"#108080",
+	"#c0c0c0",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#b0b0b0",
+	"#d05000",
+	"#50c000",
+	"#ffda60",
+	"#0070c0",
+	"#6050c0",
+	"#40a0a0",
+	"#fafafa",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+	"#507c60",
+	"#007555",
+	"#fffaef",
 };
 
 
@@ -116,10 +117,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 0;
+unsigned int defaultbg = 258;
+unsigned int defaultcs = 256;
+unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
