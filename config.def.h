@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 char font[] = "Fira Mono:size=9.5";
-int borderpx = 1;
+int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -95,7 +95,7 @@ static const char *colorname[] = {
 	"#c0c0c0",
 
 	/* 8 bright colors */
-	"#b0b0b0",
+	"#0b0b0b",
 	"#d05000",
 	"#50c000",
 	"#ffda60",
