@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "Ubuntu Mono:size=11";
+char font[] = "Fira Mono:size=9.5";
 int borderpx = 2;
 
 /*
