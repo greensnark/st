@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "Fira Mono:size=9.5";
-int borderpx = 2;
+static char font[] = "Fira Mono:size=10.5";
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
